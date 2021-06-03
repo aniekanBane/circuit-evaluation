@@ -1,5 +1,5 @@
 import numpy as np
-
+# promt user inputs
 print("\nEnter resistor values in ohms")
 R1 = float(input("Enter R1: "))
 R2 = float(input("Enter R2: "))
@@ -11,7 +11,8 @@ V1 = float(input("Enter V1: "))
 V2 = float(input("Enter V2: "))
 
 def CircuitEval(R1,R2,R3,Ry,Rz,V1,V2):
-    
+    """Function to calculate the unknown current and voltage parameters in a simple circuit"""
+
     print("calculating Rx...")
     Rx = R1 + ((R2 * R3) / (R2 + R3))
     # left hand loop
@@ -39,7 +40,9 @@ def CircuitEval(R1,R2,R3,Ry,Rz,V1,V2):
     # output voltage Vz
     Vz = Rz * Iz
     
+    # display results
     print("\nResults:")
     print("Rx = {}Ω\nIx = {}A\nIy = {}A\nIz = {}A\nVz = {}V".format(Rx, Ix, abs(Iy), Iz, Vz))
 
+# call function
 CircuitEval(R1,R2,R3,Ry,Rz,V1,V2)
