@@ -42,7 +42,7 @@ def CircuitEval(R1,R2,R3,Ry,Rz,V1,V2):
     
     # display results
     print("\nResults:")
-    print("Rx = {}Ω\nIx = {}A\nIy = {}A\nIz = {}A\nVz = {}V".format(Rx, Ix, Iy, Iz, Vz))
+    print("Rx = {:.3f}Ω\nIx = {:.5f}A\nIy = {:.5f}A\nIz = {:.5f}A\nVz = {:.5f}V".format(Rx, Ix, Iy, Iz, Vz))
 
 # call function
 CircuitEval(R1,R2,R3,Ry,Rz,V1,V2)
