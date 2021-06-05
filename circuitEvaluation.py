@@ -10,7 +10,7 @@ print("\nEnter voltage values in volts")
 V1 = float(input("Enter V1: "))
 V2 = float(input("Enter V2: "))
 
-def CircuitEval(R1,R2,R3,Ry,Rz,V1,V2):
+def CircuitEval():
     """Function to calculate the unknown current and voltage parameters in a simple circuit"""
 
     print("calculating Rx...")
@@ -45,4 +45,5 @@ def CircuitEval(R1,R2,R3,Ry,Rz,V1,V2):
     print("Rx = {:.3f}Ω\nIx = {:.5f}A\nIy = {:.5f}A\nIz = {:.5f}A\nVz = {:.5f}V".format(Rx, Ix, Iy, Iz, Vz))
 
 # call function
-CircuitEval(R1,R2,R3,Ry,Rz,V1,V2)
+CircuitEval()
+
